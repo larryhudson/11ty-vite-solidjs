@@ -1,0 +1,3 @@
+nav [aria-current] {
+    @apply bg-blue-400;
+}

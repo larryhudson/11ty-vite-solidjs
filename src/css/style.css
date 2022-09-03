@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: lightcoral;
+    font-family: Arial;
+}
+
+h1 {
+    color: blue;
+    @apply text-orange-800;
+    @apply text-6xl;
+}
+
+body {
+    @apply bg-orange-100;
+}
+

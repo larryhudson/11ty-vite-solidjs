@@ -1,0 +1,12 @@
+<div class="max-w-lg mx-auto">
+    <button data-toggle="nav" aria-expanded="false">Menu</button>
+    <nav id="nav" hidden="">
+        <ul class="list-disc" role="list">
+            {% for navItem in navItems %}
+            <li>
+                <a href="{{navItem.url}}" {% if navItem.url === page.url %}aria-current="page"{% endif %}>{{navItem.title}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>
